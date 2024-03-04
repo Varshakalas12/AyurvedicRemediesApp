@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/leaf"
+    tools:context=".searchdisease">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrayLight"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/txtOptional"
+            android:layout_width="408dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_horizontal"
+            android:text="COMMON DISEASES"
+            android:textColor="@color/colorBlack" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeCold"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/transparent_background_selector"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewCold"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/disease"
+                            android:visibility="visible"
+                            app:tint="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/txtCold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewCold"
+                            android:text="Cold"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeSoreThroat"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/transparent_background_selector"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewSoreThroat"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/disease"
+                            android:visibility="visible"
+                            app:tint="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/txtSoreThroat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewSoreThroat"
+                            android:text="Sore Throat"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeHeadaches"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/transparent_background_selector"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewHeadaches"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/disease"
+                            android:visibility="visible"
+                            app:tint="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/txtHeadaches"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewHeadaches"
+                            android:text="Headaches"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeMusclepainandinflamation"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/transparent_background_selector"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewMusclepainandinflamation"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/disease"
+                            android:visibility="visible"
+                            app:tint="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/txtMusclepainandinflamation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewMusclepainandinflamation"
+                            android:text="Muscle pain and inflamation "
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeSkinirritaion"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/transparent_background_selector"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewSkinirritaion"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/disease"
+                            android:visibility="visible"
+                            app:tint="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/txtSkinirritaion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewSkinirritaion"
+                            android:text="Skin irritaion"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeHeartDisease"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/transparent_background_selector"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewHeartDisease"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/disease"
+                            android:visibility="visible"
+                            app:tint="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/txtHeartDisease"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewHeartDisease"
+                            android:text="Heart Disease"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLowBloodPressure"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/transparent_background_selector"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewLowBloodPressure"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/disease"
+                            android:visibility="visible"
+                            app:tint="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/txtLowBloodPressure"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewLowBloodPressure"
+                            android:text="Low Blood Pressure"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeJaundice"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/transparent_background_selector"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewJaundice"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/disease"
+                            android:visibility="visible"
+                            app:tint="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/txtJaundice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewJaundice"
+                            android:text="Jaundice"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeMenstrualCramp"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/transparent_background_selector"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewMenstrualCramp"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/disease"
+                            android:visibility="visible"
+                            app:tint="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/txtMenstrualCramp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewMenstrualCramp"
+                            android:text="Menstrual Cramp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeSugar"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/transparent_background_selector"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewSugar"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/disease"
+                            android:visibility="visible"
+                            app:tint="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/txtSugar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewSugar"
+                            android:text="Sugar"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeFever"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/transparent_background_selector"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewFever"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/disease"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/txtFever"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewFever"
+                            android:text="Fever"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeKidneyStone"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/transparent_background_selector"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewKidneyStone"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/disease"
+                            android:visibility="visible"
+                            app:tint="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/txtKidneyStone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewKidneyStone"
+                            android:text="Kidney Stone"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

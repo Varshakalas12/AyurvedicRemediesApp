@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<style name="custom_AppTheme.Toolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+<item name="android:background">@color/colorPrimary</item>
+<item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+<item name="popupTheme">@style/AppTheme.ActionBar.Popup</item>
+</style>
+    <style name="TextAppearance.Widget.Event.Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!--Any text styling can be done here-->
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="AppTheme.ActionBar.Popup" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+</resources>

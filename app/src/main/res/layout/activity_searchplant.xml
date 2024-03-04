@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/leaf"
+    tools:context=".searchplant">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        style="@style/custom_AppTheme.Toolbar"/>
+
+    <TextView
+        android:id="@+id/txtToolbarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/TextAppearance.Widget.Event.Toolbar.Title"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:text="Contact List"
+        android:textColor="#FFFFFF" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrayLight"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="603dp"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txtOptional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="center_horizontal"
+                        android:text="search by Herbal Plant"
+                        android:textColor="@color/colorBlack" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeNeem"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/white_background_selected"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewNeem"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/neem"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/txtNeem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewNeem"
+                            android:text="Neem"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeTulsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/white_background_selected"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewTulsi"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/tulsi"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/txtTulsi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewTulsi"
+                            android:text="Tulsi"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeAloeVera"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/white_background_selected"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewAloeVera"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/aloe_vera"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/txtAloeVera"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewAloeVera"
+                            android:text="Aloe Vera"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeAmla"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/white_background_selected"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewAmla"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/amla"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/txtAmla"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewAmla"
+                            android:text="Amla"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeGarlic"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/white_background_selected"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewGarlic"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/garlic"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/txtGarlic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewGarlic"
+                            android:text="Garlic"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativebashok"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/white_background_selected"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewbashok"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/bashok"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/txtbashok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewbashok"
+                            android:text="bashok"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeBitterLeaf"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/white_background_selected"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewBitterLeaf"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/bitter_leaf"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/txtBitterLeaf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewBitterLeaf"
+                            android:text="Bitter Leaf"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeBitterGourd"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/white_background_selected"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewBitterGourd"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/bitter_gourd"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/txtBitterGourd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewBitterGourd"
+                            android:text="BitterGourd"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativebrahmi"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/white_background_selected"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewbrahmi"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/brahmi"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/txtbrahmi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewbrahmi"
+                            android:text="Brahmi"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorGrayLight" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativetith_begun"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/white_background_selected"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:id="@+id/imgViewtith_begun"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/tith_begun"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/txttith_begun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imgViewtith_begun"
+                            android:text="tith_begun"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right"
+                            app:tint="@color/colorPrimary" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

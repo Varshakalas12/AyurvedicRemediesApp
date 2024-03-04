@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tith_begun">
+
+    <TextView
+        android:id="@+id/txtuse"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="594dp"
+        android:layout_marginEnd="335dp"
+        android:layout_marginBottom="101dp"
+        android:text="USES"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/edtuse"
+        android:layout_width="400dp"
+        android:layout_height="95dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="632dp"
+        android:layout_marginEnd="6dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="3dp"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txtdesp"
+        android:layout_width="181dp"
+        android:layout_height="23dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="405dp"
+        android:layout_marginEnd="207dp"
+        android:layout_marginBottom="302dp"
+        android:text="DESCRIPTION"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgaloe"
+        android:layout_width="408dp"
+        android:layout_height="236dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="463dp"
+        app:srcCompat="@drawable/tith_begun" />
+
+    <TextView
+        android:id="@+id/edtdesp"
+        android:layout_width="406dp"
+        android:layout_height="149dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:textStyle="bold"
+        android:layout_marginTop="432dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="150dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="331dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="352dp"
+        android:text="            TITH_BEGUN"
+        android:textColor="@color/colorBlack"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
